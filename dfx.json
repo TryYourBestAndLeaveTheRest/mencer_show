@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "mencer_show_backend": {
+      "main": "src/mencer_show_backend/main.mo",
+      "type": "motoko"
+    },
+    "mencer_show_frontend": {
+      "dependencies": [
+        "mencer_show_backend"
+      ],
+      "source": [
+        "src/mencer_show_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "mencer_show_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
