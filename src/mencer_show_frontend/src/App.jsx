@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Dashboard from './pages/Dashboard/Overview';
 import Mentors from './pages/Dashboard/Mentors';
 import Trending from './pages/Dashboard/Trending';
+import LearnCourseDetails from './pages/Dashboard/Learn/CourseDetails';
 
 function App() {
   const [greeting, setGreeting] = useState('');
@@ -39,6 +40,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path='/dashboard/mentors' element={<Mentors />} />
         <Route path='/dashboard/trending' element={<Trending />} />
+        <Route path="/dashboard/learn/:courseId" element={<LearnCourseDetails />} />
       </Routes>
     </Router>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import { TrendingUp } from "lucide-react";
 import {
   Label,
   PolarGrid,
@@ -7,14 +6,7 @@ import {
   RadialBar,
   RadialBarChart,
 } from "recharts";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../../components/ui/card";
+import { Card } from "../../components/ui/card";
 import { ChartContainer } from "../../components/ui/chart";
 import { courses } from "../../lib/dashboardData";
 import { useNavigate } from "react-router-dom";
