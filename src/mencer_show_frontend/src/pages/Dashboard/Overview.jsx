@@ -1,11 +1,12 @@
-import DashboardLayout from "../components/dashboard/layouts/DashboardLayout";
-import DashboardSidebar from "../components/dashboard/layouts/DashboardSidebar";
-import CourseProgress from "../components/dashboard/CourseProgress";
-import Achievements from "../components/dashboard/Achievements";
-import TaskCard from "../components/dashboard/TaskCard";
-import MentorCard from "../components/dashboard/MentorCard";
-import NotificationCard from "../components/dashboard/NotificationCard";
-import { courses, tasksData, notificationsData } from "../lib/dashboardData";
+import DashboardLayout from "../../components/dashboard/layouts/DashboardLayout";
+import DashboardSidebar from "../../components/dashboard/layouts/DashboardSidebar";
+import DashboardNav from "../../components/dashboard/layouts/DashboardNav";
+import CourseProgress from "../../components/dashboard/CourseProgress";
+import Achievements from "../../components/dashboard/Achievements";
+import TaskCard from "../../components/dashboard/TaskCard";
+import MentorCard from "../../components/dashboard/MentorCard";
+import NotificationCard from "../../components/dashboard/NotificationCard";
+import { courses, tasksData, notificationsData } from "../../lib/dashboardData";
 import { Pen, Share, Trash2 } from "lucide-react";
 
 export default function DashboardPage() {
