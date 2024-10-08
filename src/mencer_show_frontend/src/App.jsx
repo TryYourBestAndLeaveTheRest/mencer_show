@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { mencer_show_backend } from 'declarations/mencer_show_backend';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Dashboard from './pages/Dashboard';
+import Dashboard from './pages/Dashboard/Overview';
+import Mentors from './pages/Dashboard/Mentors';
+import Trending from './pages/Dashboard/Trending';
 
 function App() {
   const [greeting, setGreeting] = useState('');
@@ -35,6 +37,8 @@ function App() {
           }
         />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path='/dashboard/mentors' element={<Mentors />} />
+        <Route path='/dashboard/trending' element={<Trending />} />
       </Routes>
     </Router>
   );
