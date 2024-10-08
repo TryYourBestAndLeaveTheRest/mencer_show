@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { mencer_show_backend } from 'declarations/mencer_show_backend';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
 
 function App() {
   const [greeting, setGreeting] = useState('');
@@ -14,17 +16,27 @@ function App() {
   }
 
   return (
-    <main>
-      <img src="/logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#" onSubmit={handleSubmit}>
-        <label htmlFor="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting">{greeting}</section>
-    </main>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <main>
+              <img src="/logo2.svg" alt="DFINITY logo" />
+              <br />
+              <br />
+              <form action="#" onSubmit={handleSubmit}>
+                <label htmlFor="name">Enter your name: &nbsp;</label>
+                <input id="name" alt="Name" type="text" />
+                <button type="submit">Click Me!</button>
+              </form>
+              <section id="greeting">{greeting}</section>
+            </main>
+          }
+        />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
 }
 
