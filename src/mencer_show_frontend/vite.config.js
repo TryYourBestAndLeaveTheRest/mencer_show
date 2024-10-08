@@ -38,7 +38,7 @@ export default defineConfig({
 				replacement: fileURLToPath(
 					new URL("../declarations", import.meta.url)
 				),
-				"@": path.resolve(__dirname, "./src"),
+				"@": path.resolve(__dirname, "src"),
 			},
 		],
 	},
