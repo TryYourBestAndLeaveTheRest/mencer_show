@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { mencer_show_backend } from "declarations/mencer_show_backend";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import Dashboard from "./pages/Dashboard/Overview";
 import Mentors from "./pages/Dashboard/Mentors";
 import Trending from "./pages/Dashboard/Trending";
@@ -13,6 +14,7 @@ import SelectLang from "./pages/auth/signup/educator/SelectLang";
 import StuCreateAcc from "./pages/auth/signup/student/StuCreateAcc";
 import StuSelectLang from "./pages/auth/signup/student/StuSelectLang";
 import StuSignup from "./pages/auth/signup/student/StuSignup";
+
 import StuSignin from "./pages/auth/signin/StuSignin";
 import EduSignin from "./pages/auth/signin/EduSignin";
 
@@ -29,10 +31,6 @@ import ProjectRewards from "./components/homepage/projectrewards";
 import Testimonials from "./components/homepage/testimonials";
 import MencerMarquee from "./components/homepage/ui/mencerMarquee";
 import WhyWeAreDifferent from "./components/homepage/whyWeAreDifferent";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Dashboard from './pages/Dashboard/Overview';
-import Mentors from './pages/Dashboard/Mentors';
-import Trending from './pages/Dashboard/Trending';
 
 
 function App() {
@@ -50,24 +48,8 @@ function App() {
 	return (
 		<Router>
 			<Routes>
-				<Route
-					path="/"
-					element={
-						<main>
-							<img src="/logo2.svg" alt="DFINITY logo" />
-							<br />
-							<br />
-							<form action="#" onSubmit={handleSubmit}>
-								<label htmlFor="name">
-									Enter your name: &nbsp;
-								</label>
-								<input id="name" alt="Name" type="text" />
-								<button type="submit">Click Me!</button>
-							</form>
-							<section id="greeting">{greeting}</section>
-						</main>
-					}
-				/>
+
+				{/* Dashboard routes */}
 				<Route path="/dashboard" element={<Dashboard />} />
 				<Route path="/dashboard/mentors" element={<Mentors />} />
 				<Route path="/dashboard/trending" element={<Trending />} />
@@ -77,6 +59,7 @@ function App() {
 				/>
 
 				{/* auth routes */}
+
 				{/* signup */}
 				{/* educator */}
 				<Route path="/auth/signup/educator" element={<EduSignup />} />
@@ -125,9 +108,6 @@ function App() {
             </div>
           }
         />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path='/dashboard/mentors' element={<Mentors />} />
-        <Route path='/dashboard/trending' element={<Trending />} />
 			</Routes>
 		</Router>
 	);
