@@ -41,21 +41,21 @@ const GamifiedLearning = () => {
 
         <div className='min-[991px]:ml-[40px] mt-[46px] h-full relative space-y-4 mx-auto max-w-xl min-[991px]:mr-[50px]'>
           <Card
-          key={1}
+          key={4}
           position={"start"}
           title={"10 Days Streak"}
           text={"You are Absolutely Crushing It"}
           icon={"/images/homepage/trophy1.png"}
           />
           <Card
-          key={1}
+          key={5}
           position={"reverse"}
           title={"Get More Rewards"}
           text={"Unlock new lessons and Earn More Xp"}
           icon={"/images/homepage/star.png"}
           />
           <Card
-          key={1}
+          key={6}
           position={"start"}
           title={"Get a Prize when you surpass 100 Tasks"}
           progress={true}

@@ -1,21 +1,17 @@
 "use client"
-// import Image from 'next/image'
+import { Link } from 'react-router-dom'
 import React from 'react'
 
 const Course = ({ course }) => {
   const { title, authors, rating, reviews, categories, imgUrl } = course
   return (
-    <div
-    href={`course/${title}`}
+    <Link
+    to={`course/${title}`}
     className="p-5 bg-[#fff] rounded-[16px] relative w-full cursor-pointer">
       <img
       src={imgUrl}
-      // width={400}
-      // height={400}
-      className='object-center object-cover rounded-[13px] sm:h-[200px] w-full'
+      className='object-center object-cover rounded-[13px] h-[250px] sm:h-[200px] w-full'
       alt={title}
-      quality={100}
-      // placeholder='blur'
       />
 
       <div className='mt-1.5'>
@@ -57,7 +53,7 @@ const Course = ({ course }) => {
           }
         </p>
       </div>
-    </div>
+    </Link>
   )
 }
 

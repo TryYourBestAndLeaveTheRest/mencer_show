@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { mencer_show_backend } from "declarations/mencer_show_backend";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Dashboard from "./pages/Dashboard/Overview";
@@ -34,17 +33,6 @@ import WhyWeAreDifferent from "./components/homepage/whyWeAreDifferent";
 
 
 function App() {
-	const [greeting, setGreeting] = useState("");
-
-	function handleSubmit(event) {
-		event.preventDefault();
-		const name = event.target.elements.name.value;
-		mencer_show_backend.greet(name).then((greeting) => {
-			setGreeting(greeting);
-		});
-		return false;
-	}
-
 	return (
 		<Router>
 			<Routes>
@@ -55,7 +43,7 @@ function App() {
 				<Route path="/dashboard/trending" element={<Trending />} />
 				<Route
 					path="/dashboard/learn/:courseId"
-					element={<LearnCourseDetails />}
+					elemen  t={<LearnCourseDetails />}
 				/>
 
 				{/* auth routes */}
@@ -80,7 +68,7 @@ function App() {
 				<Route
           path="/"
           element={
-            <div className="!overflow-x-hidden">
+            <div className="!overflow-hidden">
               <div className="w-full max-w-[1440px] min-h-screen mx-auto px-2">
                 <div className="w-full mx-auto max-w-[1280px] h-fit">
                   <Header />

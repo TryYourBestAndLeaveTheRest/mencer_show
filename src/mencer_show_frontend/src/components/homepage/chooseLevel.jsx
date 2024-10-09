@@ -34,7 +34,7 @@ const ChooseLevel = () => {
           </div>
         </div>
 
-        <div className='w-full max-w-[1280px] mx-auto'>
+        <div className='w-full max-w-[1280px] mx-auto px-3'>
           <Courses />
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Progress } from '../../ui/progress'
-// import { Progress } from "../../../components/ui/progress"
+
 
 
 const Card = ({ position, title, text, icon, progress }) => {

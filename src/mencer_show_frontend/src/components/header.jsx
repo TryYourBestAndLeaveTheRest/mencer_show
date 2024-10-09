@@ -1,6 +1,5 @@
 
 import React from 'react'
-// import { poppins } from '../fonts'
 import { Menu } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
@@ -14,7 +13,6 @@ const Header = () => {
         width={196}
         height={66}
         className=''
-        // quality={100}
         />
       </div>
 
@@ -27,17 +25,19 @@ const Header = () => {
             [ 'Career', ''],
             [ 'Community', ''],
           ].map(([ title, url ]) => (
-            <div
+            <Link
+            to={`/${url}`}
             className={``}
-            // href={`/${url}`} 
             key={title}>
               { title   }
-            </div>
+            </Link>
           ))
         }
       </div>
       <div className="flex items-center gap-2">
-        <Link to={'/auth/signin/student'} className='py-3 px-6 bg-[#FFDC16] rounded-[6px]'>
+        <Link 
+        to={'/auth/signin/student'}
+        className='py-3 px-6 bg-[#FFDC16] rounded-[6px]'>
           Get Started
         </Link>
         <div className="block min-[991px]:hidden">

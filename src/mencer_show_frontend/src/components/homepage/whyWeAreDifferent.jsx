@@ -3,12 +3,12 @@ import React from 'react'
 const WhyWeAreDifferent = () => {
   return (
     <div className='w-full bg-white max-w-[1280px] mx-auto px-0.5'>
-      <div className='my-16 grid grid-cols-1 md:grid-cols-2 gap-14 min-[991px]:gap-x-28'>
+      <div className='my-16 grid grid-cols-1 md:grid-cols-2 gap-7 sm:gap-14 min-[991px]:gap-x-28'>
         <div className='w-full'>
-          <h1 className={`font-semibold text-black text-4xl`}>
+          <h1 className={`font-semibold text-black text-2xl sm:text-4xl`}>
             Why are we different from other educational platforms?
           </h1>
-          <ol className={`list-decimal list-inside mt-7 space-y-6 text-[#6D6D6D] text-[20px]`}>
+          <ol className={`list-decimal list-inside mt-7 space-y-6 text-[#6D6D6D] text-[16px] sm:text-[20px]`}>
             <li>
               We provide Skill-Based Learning for Real-World Impact
             </li>

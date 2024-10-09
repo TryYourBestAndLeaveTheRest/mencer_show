@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="w-full grid grid-cols-1 sm:grid-cols-4 xl:grid-cols-5 h-[200px] mt-16 gap-y-10 !px-10">
+    <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-4 xl:grid-cols-5 mt-16 gap-y-10 !px-10">
       <div className="space-y-3 sm:col-span-2">
         <div className="">
           <img
@@ -15,18 +16,18 @@ const Footer = () => {
           />
         </div>
         <div className="flex gap-x-3">
-          <div href="#">
+          <Link to="#">
             <img src="/images/homepage/x.png" />
-          </div>
-          <div href="#">
+          </Link>
+          <Link to="#">
             <img src="/images/homepage/insta.png" />
-          </div>
-          <div href="#">
+          </Link>
+          <Link to="#">
             <img src="/images/homepage/youtube.png" />
-          </div>
-          <div href="#">
+          </Link>
+          <Link to="#">
             <img src="/images/homepage/linkedin.png" />
-          </div>
+          </Link>
         </div>
       </div>
       <div className="flex flex-col gap-7 text-[#1e1e1e]">

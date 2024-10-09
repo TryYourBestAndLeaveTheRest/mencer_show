@@ -119,13 +119,13 @@ const ProjectRewards = () => {
           icon={"/images/homepage/gift.png"}
           />
           <Card
-          key={1}
+          key={2}
           position={"reverse"}
           title={"Your NFT Certificate has been minted Successfully"}
           icon={"/images/homepage/cap.png"}
           />
           <Card
-          key={1}
+          key={3}
           position={"start"}
           title={"You are the Champion"}
           text={"Top leader for this week Tasks"}
