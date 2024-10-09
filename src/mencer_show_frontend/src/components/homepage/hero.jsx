@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 // import { poppins, grotesk } from '@/fonts'
 // import Link from 'next/link'
 
@@ -14,17 +15,17 @@ const Hero = () => {
         </div>
 
         <div className='flex items-center gap-[22px] justify-center font-normal w-fit'>
-          <div
-          // href={'/auth/signup/student'}
+          <Link
+          to={'/auth/signup/student'}
           className='py-4 text-black rounded-lg px-9 bg-lightYellow focus:outline-none'>
             Enroll For Free
-          </div>
+          </Link>
 
-          <div
-          // href={'/auth/signup/educator'}
+          <Link
+          to={'/auth/signup/educator'}
           className='px-6 py-4 bg-[#FFDC162B] text-white rounded-lg border border-lightYellow focus:outline-none'>
             Become an Educator
-          </div>
+          </Link>
         </div>
       </div>
 
