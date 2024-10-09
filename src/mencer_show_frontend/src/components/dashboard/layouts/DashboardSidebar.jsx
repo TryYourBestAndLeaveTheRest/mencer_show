@@ -19,7 +19,7 @@ const DashboardSidebar = ({ children }) => {
   return (
     <>
       <aside className="relative">
-        <div className="w-fit min-h-screen hidden md:block bg-white shadow-xl fixed top-20 left-10 flex-col items-center p-6 space-y-8 overflow-y-auto scrollbar-hide">
+        <div className="w-fit min-h-screen hidden lg:block bg-white shadow-xl fixed top-20 left-10 flex-col items-center p-6 space-y-8 overflow-y-auto scrollbar-hide">
           <div>
             <ul>
               <Link to="/dashboard" className="flex flex-col items-center gap-2 py-2 px-4 rounded-md w-full">

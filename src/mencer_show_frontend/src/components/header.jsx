@@ -2,6 +2,7 @@
 import React from 'react'
 // import { poppins } from '../fonts'
 import { Menu } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -36,9 +37,9 @@ const Header = () => {
         }
       </div>
       <div className="flex items-center gap-2">
-        <div className='py-3 px-6 bg-[#FFDC16] rounded-[6px]'>
+        <Link to={'/auth/signin/student'} className='py-3 px-6 bg-[#FFDC16] rounded-[6px]'>
           Get Started
-        </div>
+        </Link>
         <div className="block min-[991px]:hidden">
           <Menu className="cursor-pointer" />
         </div>
