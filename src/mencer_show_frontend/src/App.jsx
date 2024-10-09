@@ -13,6 +13,8 @@ import SelectLang from "./pages/auth/signup/educator/SelectLang";
 import StuCreateAcc from "./pages/auth/signup/student/StuCreateAcc";
 import StuSelectLang from "./pages/auth/signup/student/StuSelectLang";
 import StuSignup from "./pages/auth/signup/student/StuSignup";
+import StuSignin from "./pages/auth/signin/StuSignin";
+import EduSignin from "./pages/auth/signin/EduSignin";
 
 function App() {
 	const [greeting, setGreeting] = useState("");
@@ -56,6 +58,7 @@ function App() {
 				/>
 
 				{/* auth routes */}
+				{/* signup */}
 				{/* educator */}
 				<Route path="/auth/signup/educator" element={<EduSignup />} />
 				<Route path="/auth/signup/educator/create-account" element={<CreateAcc />} />
@@ -65,6 +68,10 @@ function App() {
 				<Route path="/auth/signup/student" element={<StuSignup />} />
 				<Route path="/auth/signup/student/create-account" element={<StuCreateAcc />} />
 				<Route path="/auth/signup/student/select-language" element={<StuSelectLang />} />
+
+				{/* signin */}
+				<Route path="/auth/signin/student" element={<StuSignin/>} />
+				<Route path="/auth/signin/educator" element={<EduSignin/>} />
 			</Routes>
 		</Router>
 	);
