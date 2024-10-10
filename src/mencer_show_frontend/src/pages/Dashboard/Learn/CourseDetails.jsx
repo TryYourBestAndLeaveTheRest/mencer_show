@@ -13,6 +13,7 @@ import LearnHeaderTab from "../../../components/dashboard/tabs/LearnHeaderTab";
 import { Button } from "../../../components/ui/button";
 import DashboardLayout from "../../../components/dashboard/layouts/DashboardLayout";
 import DashboardSidebar from "../../../components/dashboard/layouts/DashboardSidebar";
+import { Progress } from "../../../components/ui/progress";
 
 const LearnCourseDetails = () => {
   const location = useLocation();
@@ -62,6 +63,7 @@ const LearnCourseDetails = () => {
               <div className="aspect-w-16 aspect-h-9">
                 <video
                   controls
+                  poster="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg"
                   src={course.videoUrl}
                   className="w-full h-full rounded-lg"
                 ></video>
@@ -75,6 +77,9 @@ const LearnCourseDetails = () => {
             <Button variant="outline" style={{ color: "#FFDC16", border: "1px solid #FFDC16" }}>
               Back
             </Button>
+
+            <h1 className="text-2xl md:text-3xl lg:text-[35px] font-bold font-['Familjen Grotesk']">{course.title}</h1>
+            <Progress value={33} />
           </div>
         </div>
       </div>

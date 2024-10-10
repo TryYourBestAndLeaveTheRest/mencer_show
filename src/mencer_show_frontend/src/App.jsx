@@ -43,7 +43,7 @@ function App() {
 				<Route path="/dashboard/trending" element={<Trending />} />
 				<Route
 					path="/dashboard/learn/:courseId"
-					elemen  t={<LearnCourseDetails />}
+					element={<LearnCourseDetails />}
 				/>
 
 				{/* auth routes */}

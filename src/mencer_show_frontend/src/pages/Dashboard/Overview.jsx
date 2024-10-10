@@ -12,6 +12,7 @@ import { Pen, Share, Trash2 } from "lucide-react";
 export default function DashboardPage() {
   return (
     <DashboardSidebar>
+      <DashboardNav page={"overview"} />
       <div className="flex-1 mt-20 px-4 md:px-8 lg:ml-52">
         {/* Header Section */}
         <div className="relative mb-8 bg-gradient-to-r from-[#E26EE5] to-[#DC0EE2] text-white px-4 md:px-8 rounded-lg py-4 flex flex-col lg:flex-row justify-between items-center shadow-lg">
@@ -131,6 +132,6 @@ export default function DashboardPage() {
   );
 }
 
-DashboardPage.getLayout = function getLayout(page) {
-  return <DashboardLayout page={"overview"}>{page}</DashboardLayout>;
-};
+// DashboardPage.getLayout = function getLayout(page) {
+//   return <DashboardLayout page={"overview"}>{page}</DashboardLayout>;
+// };

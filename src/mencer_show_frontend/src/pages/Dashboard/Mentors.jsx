@@ -5,6 +5,7 @@ import MentorsComp from "../../components/dashboard/mentors/MentorsComp";
 import { mentors } from "../../lib/dashboardData";
 import DashboardSidebar from "../../components/dashboard/layouts/DashboardSidebar";
 import DashboardLayout from "../../components/dashboard/layouts/DashboardLayout";
+import DashboardNav from "../../components/dashboard/layouts/DashboardNav";
 
 const TAB_CATEGORIES = [
   { value: "all", label: "All" },
@@ -21,6 +22,7 @@ const TAB_CATEGORIES = [
 const Mentors = () => {
   return (
     <DashboardSidebar>
+      <DashboardNav page={"mentors"} />
       <div className="flex-1 mt-20 px-4 md:px-8 lg:ml-52">
         {/* Header Tab */}
         <MentorsHeaderTab currentTab="mentors" />
@@ -55,6 +57,6 @@ const Mentors = () => {
 
 export default Mentors;
 
-Mentors.getLayout = function getLayout(page) {
-  return <DashboardLayout page={"mentors"}>{page}</DashboardLayout>;
-};
+// Mentors.getLayout = function getLayout(page) {
+//   return <DashboardLayout page={"mentors"}>{page}</DashboardLayout>;
+// };

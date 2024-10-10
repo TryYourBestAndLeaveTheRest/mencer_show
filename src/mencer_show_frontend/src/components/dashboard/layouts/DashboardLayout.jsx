@@ -9,7 +9,7 @@ const DashboardLayout = ({ children, page }) => {
     <>
       <div className="relative">
         <DashboardNav
-          page={page}
+          // page={page}  
           toggleSideBar={toggleSideBar}
           setToggleSideBar={setToggleSideBar}
          />
