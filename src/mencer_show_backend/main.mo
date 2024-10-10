@@ -119,7 +119,6 @@ actor {
 
   };
 
-
   public shared ({ caller }) func deleteStudent() : async Result.Result<(), Text> {
     students.delete(caller);
     return #ok();
@@ -229,6 +228,9 @@ actor {
       };
     };
   };
+  public query func getCourseId() : async [CourseId] {
+    return Iter.toArray(courses.keys());
+  };
 
   public shared ({ caller }) func enroll(courseId : CourseId) : async Result.Result<(), Text> {
     switch (students.get(caller)) {
@@ -278,8 +280,6 @@ actor {
               updatedAt = Time.now();
             };
             reviews.put(reviewId, newReview);
-            // reviews := Array.append(reviews, [newReview]);
-            // Update course rating
             let newRating : Float = calculateAverageRating(Iter.toArray(reviews.vals()));
             let updatedCourse = { course with reviews; rating = newRating };
             courses.put(courseId, updatedCourse);
@@ -313,7 +313,7 @@ actor {
     };
   };
 
-  public shared ({ caller }) func sendNotification(userId : Principal, message : Text) : async Result.Result<(), Text> {
+  public func sendNotification(userId : Principal, message : Text) : async Result.Result<(), Text> {
     let notification = {
       id = generateId("Notif_", Principal.toText(userId));
       userId;
