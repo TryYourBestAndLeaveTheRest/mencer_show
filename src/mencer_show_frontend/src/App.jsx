@@ -31,6 +31,8 @@ import Testimonials from "./components/homepage/testimonials";
 import MencerMarquee from "./components/homepage/ui/mencerMarquee";
 import WhyWeAreDifferent from "./components/homepage/whyWeAreDifferent";
 import CourseDetails from "./pages/courses/CourseDetails";
+import AllCourses from "./pages/courses/courses";
+
 
 
 function App() {
@@ -39,11 +41,16 @@ function App() {
 			<Routes>
         
         {/* <Route path="/courses" element={}/> */}
+        {/* courses routes */}
+        <Route path="/courses" element={<AllCourses />} />
+        <Route path="/courses/course/:courseId" element={<CourseDetails />} />
+
 				{/* Dashboard routes */}
 				<Route path="/dashboard" element={<Dashboard />} />
 				<Route path="/dashboard/mentors" element={<Mentors />} />
 				<Route path="/dashboard/trending" element={<Trending />} />
 				<Route path="/dashboard/learn/:courseId" element={<LearnCourseDetails />} />
+
 
 				{/* auth routes */}
 
