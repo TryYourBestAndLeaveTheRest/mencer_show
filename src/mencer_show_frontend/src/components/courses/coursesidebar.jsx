@@ -37,12 +37,12 @@ const Sidebar = () => {
   })
   return (
     <div className='h-full w-[250px] hidden md:block'>
-      <TypographyH5>
+      <h1 className={'!mt-5 font-bold text-2xl'}>
         Filter by
-      </TypographyH5>
+      </h1>
       <div 
       ref={containerRef}
-      className="flex flex-col p-2 space-y-6">
+      className="flex flex-col p-2 space-y-6 mt-5">
         <div className="flex flex-col">
           <div 
           className='flex flex-row items-center justify-between w-full cursor-pointer' 

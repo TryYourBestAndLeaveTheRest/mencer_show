@@ -7,6 +7,7 @@ import * as Yup from "yup"
 import { useState } from "react"
 import { GoTriangleDown, GoTriangleUp } from "react-icons/go"
 import { Button } from "../../../../components/ui/button"
+import { Link } from "react-router-dom"
 
 // Form page component
 const SelectLang = () => {
@@ -132,13 +133,17 @@ const SelectLang = () => {
               )}
             </div>
 
-            <Button
+            <button
               onClick={formik.handleSubmit}
               onSubmit={formik.handleSubmit}
               className="mt-4 text-black hover:bg-primaryHover p-2 rounded"
             >
-              Complete
-            </Button>
+              <Link
+              to={'/courses'}
+              >
+                Complete
+              </Link>
+            </button>
           </div>
         </form>
       </div>
