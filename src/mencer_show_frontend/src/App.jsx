@@ -30,12 +30,16 @@ import ProjectRewards from "./components/homepage/projectrewards";
 import Testimonials from "./components/homepage/testimonials";
 import MencerMarquee from "./components/homepage/ui/mencerMarquee";
 import WhyWeAreDifferent from "./components/homepage/whyWeAreDifferent";
+import AllCourses from "./pages/courses/courses";
+
 
 
 function App() {
 	return (
 		<Router>
 			<Routes>
+        {/* courses routes */}
+        <Route path="/courses" element={<AllCourses />} />
 
 				{/* Dashboard routes */}
 				<Route path="/dashboard" element={<Dashboard />} />
@@ -45,6 +49,7 @@ function App() {
 					path="/dashboard/learn/:courseId"
 					elemen  t={<LearnCourseDetails />}
 				/>
+
 
 				{/* auth routes */}
 
