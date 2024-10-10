@@ -3,8 +3,9 @@ import { Button } from "../../../components/ui/button";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { SiHiveBlockchain } from "react-icons/si";
-import { FcGoogle } from "react-icons/fc";
+// import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
+import AuthButton from "../../../lib/internet_id";
 
 
 const StuSignin = () => {
@@ -50,11 +51,17 @@ const StuSignin = () => {
         </div>
         <div className="flex flex-col gap-4">
           <Button className="bg-inherit text-black border border-black h-12 flex flex-row items-center gap-3">
-            <SiHiveBlockchain className="text-xl" /> Continue with Internet
-            Identity{" "}
+            <SiHiveBlockchain className="text-xl" /><AuthButton
+              isStudent={true}
+              label="Sign in with Internet Identity"
+            />
           </Button>
           <Button className="bg-inherit text-black border border-black h-12 flex flex-row items-center gap-3">
-            <FcGoogle className="text-xl" /> Continue with Google
+          <AuthButton
+              label="Sign in with NFID"
+              isNFID={true}
+              isStudent={true}
+            />
           </Button>
         </div>
 

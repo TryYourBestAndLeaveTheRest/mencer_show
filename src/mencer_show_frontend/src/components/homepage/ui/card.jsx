@@ -22,7 +22,7 @@ const Card = ({ position, title, text, icon, progress }) => {
             progress && (
               <Progress
               value={60} 
-              barColor="bg-[#FFA902]"
+              // barColor="bg-[#FFA902]"
               className="w-full mt-4 !h-[8px]" 
               />
             )

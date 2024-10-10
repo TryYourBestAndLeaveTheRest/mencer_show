@@ -3,10 +3,11 @@ import { motion } from "framer-motion"
 import { TypographyH4 } from "../../../../components/Typography"
 import { Button } from "../../../../components/ui/button"
 import { SiHiveBlockchain } from "react-icons/si"
-import { FcGoogle } from "react-icons/fc"
+// import { FcGoogle } from "react-icons/fc"
 import { useFormik } from "formik"
 import * as Yup from "yup"
 import { Link, useNavigate } from "react-router-dom"
+import AuthButton from "../../../../lib/internet_id"
 
 const index = () => {
   const route = useNavigate()
@@ -73,11 +74,15 @@ const index = () => {
 
         <div className="flex flex-col gap-4">
           <Button className="bg-inherit text-black border border-black h-12 flex flex-row items-center gap-3">
-            <SiHiveBlockchain className="text-xl" /> Continue with Internet
-            Identity{" "}
+            <SiHiveBlockchain className="text-xl" /><AuthButton
+              label="Sign in with Internet Identity"
+            />
           </Button>
           <Button className="bg-inherit text-black border border-black h-12 flex flex-row items-center gap-3">
-            <FcGoogle className="text-xl" /> Continue with Google
+           <AuthButton
+              label="Sign in with NFID"
+              isNFID={true}
+            />
           </Button>
         </div>
 
