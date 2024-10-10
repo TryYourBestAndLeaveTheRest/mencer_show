@@ -21,8 +21,10 @@ const TAB_CATEGORIES = [
 
 const Mentors = () => {
   return (
+    <>
+    <DashboardNav page={"mentors"} />
     <DashboardSidebar>
-      <DashboardNav page={"mentors"} />
+      
       <div className="flex-1 mt-20 px-4 md:px-8 lg:ml-52">
         {/* Header Tab */}
         <MentorsHeaderTab currentTab="mentors" />
@@ -52,6 +54,7 @@ const Mentors = () => {
         </Tabs>
       </div>
     </DashboardSidebar>
+    </>
   );
 };
 
