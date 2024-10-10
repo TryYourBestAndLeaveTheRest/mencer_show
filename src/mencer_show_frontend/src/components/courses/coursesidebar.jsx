@@ -36,7 +36,7 @@ const Sidebar = () => {
     })
   })
   return (
-    <div className='h-full w-[250px]'>
+    <div className='h-full w-[250px] hidden md:block'>
       <TypographyH5>
         Filter by
       </TypographyH5>
