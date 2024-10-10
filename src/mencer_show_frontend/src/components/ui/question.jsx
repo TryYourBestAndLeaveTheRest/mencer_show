@@ -36,12 +36,12 @@ const Quest = ({ item, index, ref }) => {
 
   return (
     <div 
-    className={`py-5 sm:py-10 font-light tracking-wider text-lg sm:text-2xl tab:text-4xl px-2 border-[#4F4D4A] border-b ${index === 0 && 'border-t'} flex flex-col`} 
+    className={`py-5 sm:py-10 font-light tracking-wider text-lg sm:text-2xl tab:text-4xl px-2 sm:px-5 border-[1.9px] border-black border-opacity-20 rounded-xl flex flex-col cursor-pointer`} 
+    onClick={()=>accordion(index)}
     // key={index}
     >
       <div 
-      className='flex items-center justify-between w-full grid-x-3' 
-      onClick={()=>accordion(index)}
+      className='flex items-center justify-between w-full cursor-pointer grid-x-3' 
       >
         <h1 className='circle w-fit'>
           {
@@ -49,23 +49,23 @@ const Quest = ({ item, index, ref }) => {
           }
         </h1>
         <div className="plus group w-[25px] h-[25px] xs:w-[32px] xs:h-[32px] relative circle">
-          <div className='absolute top-0 left-[45%] h-full w-1 bg-white group-hover:bg-yellow-500 shadow-white shadow-lg duration-200 transition-colors rounded vertical' ref={rotateElement1Ref}/>
-          <div className='absolute top-[45%] left-[0] w-full h-1 bg-white group-hover:bg-yellow-500 shadow-white shadow-lg duration-200 transition-colors rounded horizontal' ref={rotateElement2Ref}/>
+          <div className='absolute top-0 left-[45%] h-full w-0.5 bg-[#6C6C6C] group-hover:bg-yellow-500 shadow-white shadow-lg duration-200 transition-colors rounded vertical' ref={rotateElement1Ref}/>
+          <div className='absolute top-[45%] left-[0] w-full h-0.5 bg-[#6C6C6C] group-hover:bg-yellow-500 shadow-white shadow-lg duration-200 transition-colors rounded horizontal' ref={rotateElement2Ref}/>
         </div>
       </div>
       {
         !item.list ? (
-          <div className={`space-y-8 mt-8 transition duration-200 ${accordionState ? 'block' : 'hidden'}`} ref={contentRef}>
+          <div className={`space-y-8 mt-8 transition duration-200 ${accordionState ? 'block' : 'hidden'} cursor-default`} ref={contentRef}>
             {
               item.answer.map((ans, i)=>(
-                <p className='text-lg tracking-widest sm:text-xl tab:text-2xl w-fit font-extralight' key={i}>
+                <p className='text-base font-light tracking-widest sm:text-lg tab:text-2xl w-fit' key={i}>
                   { ans }
                 </p>
               ))
             }
           </div>
         ) : (
-          <ul className={`space-y-8 mt-8 transition duration-200 px-7 ${accordionState ? 'block' : 'hidden'} list-disc`} ref={contentRef}>
+          <ul className={`space-y-8 mt-8 transition duration-200 px-7 ${accordionState ? 'block' : 'hidden'} list-disc cursor-default`} ref={contentRef}>
             {
               item.answer.map((ans, i)=>(
                 <li className='text-lg tracking-widest sm:text-xl tab:text-2xl w-fit font-extralight' key={i}>
