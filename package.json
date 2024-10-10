@@ -14,5 +14,8 @@
   "type": "module",
   "workspaces": [
     "src/mencer_show_frontend"
-  ]
+  ],
+  "dependencies": {
+    "@radix-ui/react-progress": "^1.1.0"
+  }
 }
