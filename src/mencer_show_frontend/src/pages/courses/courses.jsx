@@ -3,6 +3,7 @@ import Header from '../../components/header'
 import Footer from '../../components/footer'
 import Courses from '../../components/homepage/courses'
 import Sidebar from '../../components/courses/coursesidebar'
+import FreQuestions from '../../components/freqQuestions'
 
 
 const AllCourses = () => {
@@ -14,6 +15,7 @@ const AllCourses = () => {
           <Sidebar />
           <Courses />
         </div>
+        <FreQuestions />
         <Footer />
       </div>
     </div >
