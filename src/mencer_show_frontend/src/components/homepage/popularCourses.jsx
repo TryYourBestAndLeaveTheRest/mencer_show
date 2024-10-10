@@ -1,5 +1,6 @@
 import React from 'react'
 import Courses from './courses'
+import { Link } from 'react-router-dom'
 
 const PopularCourses = () => {
   return (
@@ -15,11 +16,11 @@ const PopularCourses = () => {
             </p>
           </div>
 
-          <div
+          <Link
           className='px-[39px] py-3 rounded-lg bg-lightYellow text-black font-normal whitespace-nowrap focus:outline-none cursor-pointer'
-          href="/courses">
+          to="/courses">
             View All
-          </div>
+          </Link>
         </div>
 
         

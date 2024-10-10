@@ -7,7 +7,7 @@ export const courses = [
       mark: 5,
       status: "done",
       assignmentLeft: 0,
-      videoUrl: "https://www.youtube.com/watch?v=6L8f3U6Xj6k",
+      videoUrl: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
       tutor: {
         name: "John Frederick",
         title: "Head Developer",
@@ -18,9 +18,9 @@ export const courses = [
         {
           name: "Fundamentals",
           videos: [
-            { title: "Introduction to Web3", url: "https://www.youtube.com/watch?v=6L8f3U6Xj6k", duration: "03:00" },
-            { title: "Getting started with Web3", url: "https://www.youtube.com/watch?v=6L8f3U6Xj6k", duration: "05:40" },
-            { title: "Web3 basics for beginners", url: "https://www.youtube.com/watch?v=6L8f3U6Xj6k", duration: "04:20" },
+            { title: "Introduction to Web3", url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", duration: "03:00" },
+            { title: "Getting started with Web3", url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", duration: "05:40" },
+            { title: "Web3 basics for beginners", url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", duration: "04:20" },
           ],
         },
         {
@@ -59,7 +59,7 @@ export const courses = [
       mark: 3,
       status: "check",
       assignmentLeft: 2,
-      videoUrl: "https://www.youtube.com/watch?v=6L8f3U6Xj6k",
+      videoUrl: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
       tutor: {
         name: "John Frederick",
         title: "Head Developer",
@@ -70,9 +70,9 @@ export const courses = [
         {
           name: "Fundamentals",
           videos: [
-            { title: "Introduction to Web3", url: "https://www.youtube.com/watch?v=6L8f3U6Xj6k", duration: "03:00" },
-            { title: "Getting started with Web3", url: "https://www.youtube.com/watch?v=6L8f3U6Xj6k", duration: "05:40" },
-            { title: "Web3 basics for beginners", url: "https://www.youtube.com/watch?v=6L8f3U6Xj6k", duration: "04:20" },
+            { title: "Introduction to Web3", url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", duration: "03:00" },
+            { title: "Getting started with Web3", url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", duration: "05:40" },
+            { title: "Web3 basics for beginners", url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", duration: "04:20" },
           ],
         },
         {
@@ -111,7 +111,7 @@ export const courses = [
       mark: 1,
       status: "check",
       assignmentLeft: 4,
-      videoUrl: "https://www.youtube.com/watch?v=6L8f3U6Xj6k",
+      videoUrl: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
       tutor: {
         name: "John Frederick",
         title: "Head Developer",
@@ -122,9 +122,9 @@ export const courses = [
         {
           name: "Fundamentals",
           videos: [
-            { title: "Introduction to Web3", url: "https://www.youtube.com/watch?v=6L8f3U6Xj6k", duration: "03:00" },
-            { title: "Getting started with Web3", url: "https://www.youtube.com/watch?v=6L8f3U6Xj6k", duration: "05:40" },
-            { title: "Web3 basics for beginners", url: "https://www.youtube.com/watch?v=6L8f3U6Xj6k", duration: "04:20" },
+            { title: "Introduction to Web3", url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", duration: "03:00" },
+            { title: "Getting started with Web3", url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", duration: "05:40" },
+            { title: "Web3 basics for beginners", url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", duration: "04:20" },
           ],
         },
         {

@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 import React from 'react'
 
 const Course = ({ course }) => {
-  const { title, authors, rating, reviews, categories, imgUrl } = course
+  const { title, authors, rating, reviews, categories, imgUrl, id } = course
   return (
     <Link
-    to={`course/${title}`}
+    to={`course/${id}`}
     className="p-5 bg-[#fff] rounded-[16px] relative w-full cursor-pointer">
       <img
       src={imgUrl}

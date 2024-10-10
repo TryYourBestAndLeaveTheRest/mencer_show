@@ -5,7 +5,7 @@ import { Button } from "../../ui/button";
 import { Input } from "../../ui/input";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-const DashboardNav = ({ toggleSideBar, setToggleSideBar }) => {
+const  DashboardNav = ({ toggleSideBar, setToggleSideBar }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const { pathname } = location;
