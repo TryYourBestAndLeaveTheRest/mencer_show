@@ -9,6 +9,7 @@ import {
   AccordionTrigger,
 } from "../../components/ui/accordion";
 import { Button } from "../../components/ui/button";
+import Footer from "../../components/footer";
 
 const CourseDetails = () => {
   const [course, setCourse] = useState(null);
@@ -104,10 +105,25 @@ const CourseDetails = () => {
           </div>
 
           <div>
-            <h1>FRequently Asked Question</h1>
+            <h1>Frequently Asked Question</h1>
+            <Accordion collapsible>
+              <AccordionItem value="1">
+                <AccordionTrigger>What is the course duration?</AccordionTrigger>
+                <AccordionContent>Course duration is 3 months.</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="2">
+                <AccordionTrigger>What is the course fee?</AccordionTrigger>
+                <AccordionContent>Course fee is $100.</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="3">
+                <AccordionTrigger>What is the course timing?</AccordionTrigger>
+                <AccordionContent>Course timing is 2 hours daily.</AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
