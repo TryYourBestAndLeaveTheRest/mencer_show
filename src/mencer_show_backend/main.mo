@@ -161,7 +161,7 @@ actor {
           instructor = caller;
           lessons = [];
           quizzes = [];
-          students = []; // remember to update this field anytime a user enrol for a course
+          students = []; // remember to update this field anytime a user enroll for a course
           rating : Float = 0;
           createdAt = Time.now();
           updatedAt = Time.now();
