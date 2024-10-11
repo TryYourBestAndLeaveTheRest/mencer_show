@@ -13,7 +13,7 @@
         "mencer_show_backend",
         "assetstorage"
       ],
-      "source": "src/mencer_show_frontend/dist",
+      "source": ["src/mencer_show_frontend/dist"],
       "type": "assets",
       "workspace": "mencer_show_frontend"
     }
