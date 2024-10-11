@@ -10,8 +10,7 @@
     },
     "mencer_show_frontend": {
       "dependencies": [
-        "mencer_show_backend",
-        "assetstorage"
+        "mencer_show_backend"
       ],
       "source": ["src/mencer_show_frontend/dist"],
       "type": "assets",
