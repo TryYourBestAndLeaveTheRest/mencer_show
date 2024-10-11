@@ -4,13 +4,16 @@
       "main": "src/mencer_show_backend/main.mo",
       "type": "motoko"
     },
+    "assetstorage": {
+      "main": "src/assetstorage/main.mo",
+      "type": "motoko"
+    },
     "mencer_show_frontend": {
       "dependencies": [
-        "mencer_show_backend"
+        "mencer_show_backend",
+        "assetstorage"
       ],
-      "source": [
-        "src/mencer_show_frontend/dist"
-      ],
+      "source": "src/mencer_show_frontend/dist",
       "type": "assets",
       "workspace": "mencer_show_frontend"
     }
