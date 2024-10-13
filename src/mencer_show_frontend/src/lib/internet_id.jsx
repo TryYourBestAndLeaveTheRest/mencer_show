@@ -28,15 +28,19 @@ const AuthButton = ({ label, isNFID, isStudent }) => {
 
             const response = await mencer_show_backend.loginAsStudent();
             if (response.ok) {
+                console.log('the user is a student and therefore he should be redirected to the student dashboard here')
                 // direct user to  the dashboard 
             } else {
+                console.log('the user is not a student before so he should be prompted to student registration page')
                 // redirect user to the sign up page back
             }
         } else {
             const response = await mencer_show_backend.loginAsInstructor();
             if (response.ok) {
+                console.log('This user is a registered instructor and therefore he should be redirected to the instructor dashboard')
                 // direct user to  the dashboard 
             } else {
+                console.log('the user is not an instructor before so he should be prompted to instructor registration page')
                 // redirect user to the sign up page back
             }
         }
