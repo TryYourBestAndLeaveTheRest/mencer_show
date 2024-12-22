@@ -18,7 +18,7 @@ const ChooseLevel = () => {
               Choose Your level
             </h1>
             <p className={`text-[#6D6D6D]`}>
-              Lorem ipsum dolor sit amet consectetur. Turpis ultricies sagittis lacus tempor pellentesque nisl. Sem lobortis pellentesque proin orci turpis sagittis convallis aliquam vivamus.
+            At Mencer, learning is built around you. Whether you're a complete beginner curious about the basics, or an intermediate exploring the depths of Web3 development, we’ve got something for everyone.
             </p>
           </div>
 
